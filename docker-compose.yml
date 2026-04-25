@@ -1,6 +1,13 @@
-version: 3
+version: '3.8'
 
 services:
-  app:
-    image: ubuntu:22.04
-    command: /bin/bash
+  jenkins:
+    image: jenkins/jenkins:lts
+    container_name: jenkins_test
+    ports:
+      - "8080:8080"
+    volumes:
+      - jenkins_home:/var/jenkins_home
+
+volumes:
+  jenkins_home:
