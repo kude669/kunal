@@ -9,13 +9,10 @@ networks:
 
 
 servives:
-  web1: 
-  build:
-    context: .
-  tty: "true"
-  stdin_open: "true"
-  ports:
-    - 80:80
-  networks:
-    - lavatech
-  command: bash
+
+lavatech:
+  image: centos
+  stdin_open: true
+  tty: true
+  command: bin/bash
+  
