@@ -1,8 +1,9 @@
 version: '3.8'
 
 services:
+
   jenkins:
-    image: jenkins:lts
+    image: jenkins:lavatech
     container_name: jenkinstest
     ports:
       - "8080:8080"
