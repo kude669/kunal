@@ -10,9 +10,9 @@ networks:
 
 servives:
 
-lavatech:
-  image: centos
-  stdin_open: true
-  tty: true
-  command: bin/bash
+ lavatech:
+   image: centos
+   stdin_open: true
+   tty: true
+   command: bin/bash
   
