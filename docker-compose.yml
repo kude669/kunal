@@ -3,7 +3,7 @@ version: '3.8'
 services:
   jenkins:
     image: jenkins:lts
-    container_name: jenkins_test
+    container_name: jenkinstest
     ports:
       - "8080:8080"
 
