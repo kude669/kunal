@@ -1,6 +1,7 @@
+
 version: '3.8'
 
 services:
   app:
     image: ubuntu:22.04
-    command: echo "Container is running"
+    command: sleep infinity
