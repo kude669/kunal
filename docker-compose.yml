@@ -1,7 +1,20 @@
+version: "3"
+networks:
+  ap_net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 110.120.140.0/24
 
-version: '3.8'
 
 services:
-  app:
-    image: ubuntu:22.04
-    command: sleep infinity
+
+  lavatech:
+    image: centos
+    stdin_open: true
+    tty: true
+    command: /bin/bash
+    networks:
+      ap_net:
+        ipv4_address: 110.120.130.100
