@@ -1,10 +1,6 @@
 version: '3.8'
 
 services:
-
-  jenkins:
-    image: jenkins:lavatech
-    container_name: jenkinstest
-    ports:
-      - "8080:8080"
-
+  app:
+    image: ubuntu:22.04
+    command: echo "Container is running"
